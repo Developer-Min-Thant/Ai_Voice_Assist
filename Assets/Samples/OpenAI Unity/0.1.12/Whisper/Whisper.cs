@@ -29,7 +29,7 @@ namespace OpenAI
         private bool isRecording;
         private float time;
         private float height;
-        private OpenAIApi openai = new OpenAIApi("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");
+        private OpenAIApi openai = new OpenAIApi("Place You key Open ai key here");
 
         private List<ChatMessage> messages = new List<ChatMessage>();
         private string prompt = "Act as a random stranger in a chat room and reply to the questions. Don't break character. Don't ever mention that you are an AI model. Reply with japanese language.";
@@ -67,7 +67,7 @@ namespace OpenAI
 
         public async void PlayVoice(String text)
         {
-            int speaker = 3; 
+            int speaker = 1; 
             await voicevox.PlayOneShot(speaker, text);
         }
 

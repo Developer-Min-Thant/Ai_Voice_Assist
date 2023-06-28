@@ -353,7 +353,6 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/VoicevoxBridge.ref.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.1f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.1f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
-"Assets/ButtonClick.cs"
 "Assets/Samples/OpenAI Unity/0.1.12/ChatGPT/ChatGPT.cs"
 "Assets/Samples/OpenAI Unity/0.1.12/Whisper/SaveWav.cs"
 "Assets/Samples/OpenAI Unity/0.1.12/Whisper/Whisper.cs"
