@@ -29,10 +29,10 @@ namespace OpenAI
         private bool isRecording;
         private float time;
         private float height;
-        private OpenAIApi openai = new OpenAIApi("Place You key Open ai key here");
+        private OpenAIApi openai = new OpenAIApi("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");
 
         private List<ChatMessage> messages = new List<ChatMessage>();
-        private string prompt = "Act as a random stranger in a chat room and reply to the questions. Don't break character. Don't ever mention that you are an AI model. Reply with japanese language.";
+        private string prompt = "Act as a random stranger in a chat room and reply to the questions. Don't break character. Don't ever mention that you are an AI model. Reply with only japanese language.";
 
 
         private void Start()
@@ -67,6 +67,7 @@ namespace OpenAI
 
         public async void PlayVoice(String text)
         {
+            Debug.Log("Start Play Voice");
             int speaker = 1; 
             await voicevox.PlayOneShot(speaker, text);
         }
@@ -149,7 +150,7 @@ namespace OpenAI
             // Complete the instruction
             var completionResponse = await openai.CreateChatCompletion(new CreateChatCompletionRequest()
             {
-                Model = "gpt-3.5-turbo-0301",
+                Model = "gpt-3.5-turbo",
                 Messages = messages
             });
 
